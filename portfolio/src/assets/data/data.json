@@ -1,0 +1,61 @@
+{
+    "name": "Jeremias Peralta",
+    "backImage": "https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg",
+    "image": "https://pbs.twimg.com/media/FWuQhgFXwAANCf_?format=jpg&name=large",
+    "position": "Desarrollador Full Stack Jr",
+    "school": {
+        "name":"Universidad Nacional de Rio Cuarto",
+        "img": "https://www.unrc.edu.ar/imgs/top-a-cel.png",
+        "url": "#"
+    },
+    "ubication":"Rio Cuarto - Cordoba (Argentina)",
+    "about":"Programador Full Stack Jr con habilidades en HTML, CSS, Javascript, Typescript, Angular, etc",
+    "experience": [{
+            "position": "Administrativo",
+            "company": "Roberto de Angelo y Asoc SA",
+            "img" : "https://www.unrc.edu.ar/imgs/top-a-cel.png",
+            "mode": "Jornada Completa",
+            "start": "Ene 2021",
+            "end": "Feb 2022",
+            "timeElapsed": "1 año y 1 mes",
+            "place": "Rio Cuarto - Cordoba"
+        }
+    ],
+    "education": [{
+            "school": "UNRC",
+            "title": "Licenciatura en",
+            "img": "https://www.unrc.edu.ar/imgs/top-a-cel.png",
+            "career": "Ciencias de la Computacion",
+            "score": 0,
+            "start": "2017",
+            "end": "2020 (incompleto)"
+        },
+        {
+            "school": "Escuela Normal Superior J.J de Urquiza",
+            "title": "Bachiller",
+            "img": "https://www.unrc.edu.ar/imgs/top-a-cel.png",
+            "career": "Ciencias Sociales",
+            "score": 0,
+            "start": "2009",
+            "end": "2016"
+        }
+    ],
+    "skills": [{
+            "name": "Resolucion de problemas",
+            "progress": 75
+        },
+        {
+            "name": "Diseño de Sistemas",
+            "progress": 25
+        }
+    ],
+    "proyectos": [{
+            "nombre": "Revendedor de Paginas Web",
+            "detalles": "hola"
+        },
+        {
+            "nombre": "algun proyecto",
+            "detalles": "algun detalle"
+        }
+    ]
+}

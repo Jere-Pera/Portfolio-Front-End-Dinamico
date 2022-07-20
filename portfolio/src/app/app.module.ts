@@ -7,7 +7,7 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExpEduComponent } from './components/exp-edu/exp-edu.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

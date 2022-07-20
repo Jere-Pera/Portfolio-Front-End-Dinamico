@@ -7,13 +7,15 @@
     </div>
     <div id="experiencia">
         <ul>
-            <li id="exp-info1">
+            <li id="exp-info1" *ngFor="let experiencia of expList">
                 <div class="info-exp-edu">
                     <div>
-                        <h2>Administrativo</h2>
-                        <p style="font-weight:bold">Roberto de Angelo y Asociados S.A - Jornada Completa</p>
-                        <p style="font-weight:bold; color:dimgray">(Ene 2021-Feb 2022) - 1 año</p>
-                        <p style="font-weight:bold; color:dimgray">Ciudad - Provincia</p>
+                        <h2>{{experiencia.position}}</h2>
+                        <p style="font-weight:bold">{{experiencia.company}}</p>
+                        <p style="font-weight:bold; color:dimgray">
+                            <time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time> ({{experiencia.timeElapsed}})
+                        </p>
+                        <p style="font-weight:bold; color:dimgray">{{experiencia.place}}</p>
                     </div>
                     <div class="icon-add-del">
                         <div>
@@ -40,29 +42,14 @@
     </div>
     <div id="educacion">
         <ul>
-            <li id="edu-info1">
+            <li id="edu-info1" *ngFor="let educacion of eduList">
                 <div class="exp-edu">
                     <div id="info-exp-edu">
-                        <h2>UNRC</h2>
-                        <p style="font-weight:bold">Licenciatura en Cs de la Computacion</p>
-                        <p style="font-weight:bold; color:dimgray">Feb 2017 - Jun 2020 (Incompleto)</p>
-                    </div>
-                    <div class="icon-add-del">
-                        <a href="#" class="btn-right">
-                            <i id="lapiz-exp-li" class="fa fa-pen"></i>
-                        </a>
-                        <a href="#" class="btn-right">
-                            <i id="lapiz-exp-li" class="fa-solid fa-trash"></i>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li id="edu-info1">
-                <div class="exp-edu">
-                    <div id="info-exp-edu">
-                        <h2>Escuela Normal Superior J.J de Urquiza</h2>
-                        <p style="font-weight:bold">Bachiller en Ciencias Sociales</p>
-                        <p style="font-weight:bold; color:dimgray">2009-2016</p>
+                        <h2>{{educacion.school}}</h2>
+                        <p style="font-weight:bold">{{educacion.title}} {{educacion.career}}</p>
+                        <p style="font-weight:bold; color:dimgray">
+                          <time>{{educacion.start}}</time> - <time>{{educacion.end}}</time> 
+                        </p>
                     </div>
                     <div class="icon-add-del">
                         <a href="#" class="btn-right">

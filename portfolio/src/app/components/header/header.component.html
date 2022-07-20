@@ -1,17 +1,22 @@
 <div class="card mat-card" id="first-card">
-    <div id="atras-img"><img src="https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg"></div>
+    <div id="atras-img">
+        <img [src]="miPorfolio?.backImage">
+    </div>
     <div id="info" style="padding: 16px">
         <div id="info img">
-            <img class="profile-image" src="https://scontent.fcor2-1.fna.fbcdn.net/v/t39.30808-6/271544165_10223561690261841_3783471209112090162_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=1uhXoMQx27wAX_MWSvn&_nc_ht=scontent.fcor2-1.fna&oh=00_AT_PdljuxRT4q_IswAkrOPkaWtGZof0PhNYlQo3FV8DgaQ&oe=62D17B78">
+            <img 
+                class="profile-image" 
+                [src]="miPorfolio?.image"
+            />
             <div id="btn-profile"><a href="#"><i id="lapiz-profile" class="fa fa-pen" style="padding-left: 10px;"></i></a></div>
             <div id="info-basica">
-                <h1>Jeremias Peralta</h1>
+                <h1>{{miPorfolio?.name}}</h1>
                 <div id="puesto">
-                    <h4 class="subtitulo">Desarrollador Full Stack Jr</h4>
+                    <h4 class="subtitulo">{{miPorfolio?.position}}</h4>
                 </div>
                 <div>
-                    <span>Ciudad - Provincia - Argentina</span>
-                    <span><a href="#">Informacion de Contacto</a></span>
+                    <span>{{miPorfolio?.ubication}}</span>
+                    <span style="padding-left: 10px"><a href="#">Informacion de Contacto</a></span>
                 </div>
             </div>
         </div>
