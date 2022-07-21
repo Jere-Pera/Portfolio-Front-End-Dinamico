@@ -7,11 +7,13 @@
     </div>
     <div>
         <ul>
-            <li >
+            <li *ngFor="let proyecto of proyList">
                 <div class="info-exp-edu">
                     <div>
-                        <h2>{{proyects?.nombre}}</h2>
-                        <p>{{proyects?.detalles}}</p>
+                        <a href="#">
+                            <h2>{{proyecto?.nombre}}</h2>
+                        </a>
+                        <p>{{proyecto?.detalles}}</p>
                     </div>
                     <div class="icon-add-del">
                         <div>
